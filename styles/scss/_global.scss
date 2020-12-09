@@ -1,3 +1,9 @@
+//Colours/Swatches
+$primaryAccent: #ffb567;
+$secondaryAccent: #008083;
+$regularGrey: #666666;
+$smokeGrey: #e4e4e4;
+
 body {
     background-color: white;
     font-family: lato;
@@ -13,7 +19,51 @@ ul {
     list-style: none;
 }
 
+.nav-link {
+    background-image: linear-gradient($secondaryAccent, $secondaryAccent);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size .3s;
+    &:hover, &:focus {
+      // background-color: #f5f5f5;
+      background-size: 100% 3px;
+    }
+}
 a {
     text-decoration: none;
     color: #231f1f;
 }
+
+.text-label {
+    text-transform: uppercase;
+    color: #666666;
+    letter-spacing: 0.8px;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.divider {
+    margin: 20px 0;
+    width: 70px;
+    height: 3px;
+    background-color: $primaryAccent;
+}
+
+.section {
+    padding: 120px 56px;
+}
+
+@media (max-width: 991px) {
+  .section {
+  padding: 100px 8px;
+  }
+}
+
+@media (max-width: 568px) {
+  .section {
+   padding: 80px 8px;
+  }
+}
+
+
