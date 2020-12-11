@@ -4,11 +4,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-telli-gent - Contact</title>
+  <title>E-telli-gent - Home</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="./fonts/MyFontsWebfontsKit.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a5445796b5.js" crossorigin="anonymous"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3Mm8NalcM3G5Klmg99WuDEJHvGYwOpb0&callback=initMap"
+    type="text/javascript"></script>
+  <script type="text/javascript">
+
+    function initMap() {
+      let location = new google.maps.LatLng(51.052605, -114.119942);
+      let map_canvas = document.getElementById('map');
+      let map_options = {
+        center: location,
+        zoom: 13,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        mapTypeControl: false,
+        streetViewControl: false
+
+      }
+      let map = new google.maps.Map(map_canvas, map_options);
+
+      new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
 </head>
+
 
 <body>
 
-</body>
+  <body>
+
+    <header>
+      <!--NAV BAR-->
+      <nav>
+        <div class="wrapper">
+          <div class="nav-container">
+
+            <!-- LOGO -->
+            <a class="logo" href="index.html" title="Logo">
+              <span class="e">e</span>
+              <div class="light">-telli-gent<img src="./assets/chevron-white.svg" alt="e-telli-gent arrow logo"></div>
+            </a>
+
+            <!-- HAMBURGER/MOBILE MENU -->
+            <label for="toggle"><img class='menu' src='./assets/hamburger.svg' aria-hidden="true"><span
+                class="sr-only">Menu</span></label>
+            <input type="checkbox" id="toggle" name="toggle" />
+            <ul>
+              <li><a class="nav-link light" href="index.html" title="Click here to go to the homepage">Home</a></li>
+              <li><a class="nav-link light" href="about.html" title="Click here to go to our about page">About</a></li>
+              <li><a class="nav-link light" href="contact.html" title="Click here to go to our contact page">Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="hero banner overlay">
+      <div class="hero-container">
+        <h1>Contact Us</h1>
+        <div class="divider"></div>
+        <p class="description center">Have a question, comment, or inquiry? We would love to hear from you!</p>
+      </div>
+    </div>
+
+    <section class="contact-us">
+      <div class="wrapper">
+        <div class="title-container">
+          <div class="text-label">Let's Work Together</div>
+          <div class="divider"></div>
+          <p class="description center large">We create dynamic e-solutions for business all around the globe to help
+            them
+            grow and reach new heights</p>
+        </div>
+
+        <div class="contact-container contact-page">
+          <div class="contact-flex contact-page">
+            <div class="contact-text contact-page">
+              <h3>Contact Us</h3>
+              <p class="description">Have a question, comment, or inquiry? We would love to hear from you!</p>
+              <div class="contact-info ">
+                <li><img src="./assets/marker.svg"> <a href="https://goo.gl/maps/cNBvfTur5hArw9Lg6"
+                    title="Click here to go find directions to our Address">2540 Kensington
+                    Road NW, Calgary, AB
+                    T2N 3S3</a></li>
+                <li><img src="./assets/email.svg"><a href="mailto:info@etelligent.com"
+                    title="Click here to go send us an email">info@etelligent.com</a></li>
+                <li><img src="./assets/phone.svg"><a href="#" title="Click here to go to Travel's Twitter Page">+1 (403)
+                    555-1234</a></li>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form front-page" action="contact-form.php" method="POST">
+            <label for="first-name" class="sr-only">Provide your First Name</label>
+            <label for="first-name">Your First Name</label>
+            <input type="text" name="first-name" placeholder="First Name">
+            <label for="last-name" class="sr-only">Provide your Last Name</label>
+            <label for="last-name">Your Last Name</label>
+            <input type="text" name="last-name" placeholder="Last Name">
+            <label for="user-email" class="sr-only">Provide your a e-mail address</label>
+            <label for="user-email">Email Address</label>
+            <input type="email" name="user-email" placeholder="E-Mail Address">
+            <label for="subject" class="sr-only">Provide your a subject or title for your message</label>
+            <label for="subject">Subject</label>
+            <input type="text" name="subject" placeholder="Subject">
+
+            <label for="userMessage" class="sr-only">Type Your Message To Send</label>
+            <label for="userMessage">Message</label>
+            <textarea name="message" placeholder="How can we help you?" cols="70" rows="10"></textarea>
+            <button type="submit" name="submit">Send Message</button>
+          </form>
+          <div id="map"></div>
+        </div>
+
+    </section>
+
+    <footer>
+      <div class="wrapper">
+        <div class="footer-container">
+
+          <!--footer first content-->
+
+          <div class="textContainer">
+            <a class="logo" href="index.html" title="Logo">
+              <span class="e">e</span>
+              <div class="light">-telli-gent<img src="./assets/chevron-white.svg" alt="e-telli-gent arrow logo"></div>
+            </a>
+            <p>At E-telli-gent we provide a focused, broad range of services to a
+              world-class, international,
+              region-centric clientelle with our signature e-solutions.
+            </p>
+            <div class="social-icons-container">
+              <a href="https://twitter.com" class="social-icon-box twitter"><img src="./assets/twitter.svg"
+                  alt="Click here to visit our Twitter page">
+              </a>
+              <a href="https://facebook.com" class="social-icon-box facebook"><img src="./assets/facebook.svg"
+                  alt="Click here to visit our Facebook page">
+              </a>
+              <a href="https://instagram.com" class="social-icon-box instagram"><img src="./assets/instagram.svg"
+                  alt="Click here to visit our Instagram page">
+              </a>
+              <a href="https://linkedin.com" class="social-icon-box linkedin"><img src="./assets/linkedin.svg"
+                  alt="Click here to visit our LinkedIn page">
+              </a>
+            </div>
+          </div>
+
+          <!-- footer second content // Footer Navigation -->
+
+          <ul class="textContainer">
+            <h3>Navigation</h3>
+            <li><a class="nav-link light" href="index.html" title="Click here to go to the homepage">Home</a></li>
+            <li><a class="nav-link light" href="about.html" title="Click here to go to the about page">About</a></li>
+            <li><a class="nav-link light" href="contact.html" title="Click here to go to the contact page">Contact</a>
+            </li>
+          </ul>
+
+          <div class="textContainer">
+            <h3>Subscribe To Our Newsletter</h3>
+            <p>Get our monthly newsletter outlining our current projects and case studies.
+            </p>
+            <form action="#" method="POST" class="contact-form" name="contact-form">
+              <label for="userEmail" class="sr-only">Provide your Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="email address">
+              <button type="submit">Subscribe</button>
+          </div>
+
+          <ul class="textContainer">
+            <h3>Get In Touch</h3>
+            <li><a class="nav-link light" href="#" title="Click here to go to the homepage">2540 Kensington Road NW,
+                Calgary, AB
+                T2N 3S3</a></li>
+            <li><a class="nav-link light" href="#" title="Click here to go to the about page">info@etelligent.ca</a>
+            </li>
+            <li><a class="nav-link light" href="#" title="Click here to go to Travel's Twitter Page">+1 (403)
+                555-1234</a>
+            </li>
+          </ul>
+
+          <!-- footer third content -->
+
+
+
+        </div>
+    </footer>
+
+
+    <!-- copyright  -->
+
+    <div class="copyright">
+      <div class="wrapper">
+        <h4>Made with &#x2764 by Haris Shaikh</h4>
+      </div>
+    </div>
+
+
+    <script src='scripts.js'></script>
+  </body>
 
 </html>

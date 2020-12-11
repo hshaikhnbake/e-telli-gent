@@ -1,9 +1,11 @@
 //Colours/Swatches
 $primaryAccent: #ffb567;
 $secondaryAccent: #008083;
-$regularGrey: #666666;
 $smokeGrey: #e4e4e4;
+$whiteSmoke: whitesmoke;
 
+
+//page behaviour
 body {
     background-color: white;
     font-family: lato;
@@ -19,20 +21,90 @@ ul {
     list-style: none;
 }
 
-.nav-link {
-    background-image: linear-gradient($secondaryAccent, $secondaryAccent);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 3px;
-    transition: background-size .3s;
-    &:hover, &:focus {
-      // background-color: #f5f5f5;
-      background-size: 100% 3px;
-    }
+section {
+    padding: 120px 56px;
+    &.small {
+      padding: 60px 56px;
+      margin: 0;
+  }
 }
+
+section {
+  .title-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 8px 64px;
+    margin: 0 auto;
+  }
+  &.review {
+    padding: 120px 56px 180px;
+  }
+}
+
+//logo
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 300;
+
+  div {
+      position: relative;
+      right: 7px;
+  &.light {
+    color: white;
+    }
+  }
+  img {
+    position: relative;
+    bottom: 2px;
+    transform: rotate(-90deg) scale(0.6)
+  }
+}
+
+.e {
+    font-family: Amithen;
+    color: $primaryAccent;
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+//typography
+
 a {
     text-decoration: none;
     color: #231f1f;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: clamp(2.3rem, 6vw, 4.5rem);
+  font-weight: 700;
+  margin-bottom: 24px;
+  .e {
+    font-size: clamp(4rem, 10vw, 8rem);
+  }
+}
+
+h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  .e {
+    font-size: clamp(4rem, 10vw, 8rem);
+  }
+}
+
+h3 {
+  font-size: clamp(1rem, 1vw, 1.3rem);
+  font-weight: 700;
+}
+
+h4 {
+  margin-top: 10px;
+  font-weight: 700;
 }
 
 .text-label {
@@ -41,29 +113,133 @@ a {
     letter-spacing: 0.8px;
     font-size: 11px;
     line-height: 16px;
+    margin-bottom: 10px;
 }
 
+.name {
+  font-weight: 700;
+}
+
+.description {
+  margin: 4px 0 32px 0;
+  font-size: 17px;
+  line-height: 28px;
+  &.italics {
+    font-style: italic;
+    padding: 0 20px;
+  }
+  &.large {
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+.center {
+  text-align: center;
+}
+
+
+//Link Hover Animation
+
+.nav-link {
+    background-image: linear-gradient($secondaryAccent, $secondaryAccent);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 3px;
+    transition: background-size .3s;
+    &:hover, &:focus {
+      background-size: 100% 3px;
+    }
+  &.light {
+    color: whitesmoke;
+    padding-bottom: 3px;      
+    background-image: linear-gradient($primaryAccent, $primaryAccent);
+    }
+}
+
+//components
+
+button {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid $secondaryAccent;
+  background-color: white;
+  color: $secondaryAccent;
+  padding: 11px 24px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  height: 48px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $secondaryAccent;
+    color: white;
+  }
+}
 .divider {
     margin: 20px 0;
     width: 70px;
     height: 3px;
     background-color: $primaryAccent;
+  &.short {
+    width: 30px;
+  }
 }
 
-.section {
-    padding: 120px 56px;
+.overlay {
+  color: $whiteSmoke;
+}
+
+//Social Icons
+.social-icons-container {
+  display: flex;
+  margin-top: 20px;
+    .social-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #e4e4e4;
+    border-radius: 12px;
+    margin: 0 5px;
+    &:first-child {
+    margin-left: 0px;
+    }
+  }
 }
 
 @media (max-width: 991px) {
-  .section {
-  padding: 100px 8px;
+  section {
+  padding: 80px 8px;
+    .title-container {
+    padding: 0 8px 56px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+  padding: 60px 8px;
+  }
+  .description {
+  font-size: 15px;
   }
 }
 
 @media (max-width: 568px) {
-  .section {
-   padding: 80px 8px;
+  section {
+   padding: 40px 8px;
+    .title-container {
+    padding: 0 8px 40px;
+    }
+  }
+  h1 {
+    margin-bottom: 12px;
+  }
+  .description {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
-
-

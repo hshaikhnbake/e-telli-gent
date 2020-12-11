@@ -4,31 +4,323 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-telli-gent - About</title>
-  <link rel="stylesheet" href="/styles/styles.css">
+  <title>E-telli-gent - Home</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" type="text/css" href="./fonts/MyFontsWebfontsKit.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a5445796b5.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
+  <header>
+    <!--NAV BAR-->
+    <nav>
+      <div class="wrapper">
+        <div class="nav-container">
 
-  <p>Contact Us</p>
-  <form class="contact-form" action="contact-form.php" method="POST">
-    <label for="userFirstName" class="sr-only">Provide your First Name</label>
-    <input type="text" name="name" placeholder="First Name" required="true">
-    <label for="userLastName" class="sr-only">Provide your Last Name</label>
-    <input type="text" name="mail" placeholder="Last Name" required="true">
-    <label for="userEmail" class="sr-only">Provide your a e-mail address</label>
-    <input type="email" name="subject" placeholder="E-Mail Address">
-    <label for="subject" class="sr-only">Provide your a subject or title for your message</label>
-    <input type="text" name="subject" placeholder="Subject">
+          <!-- LOGO -->
+          <a class="logo" href="index.html" title="Logo">
+            <span class="e">e</span>
+            <div class="light">-telli-gent<img src="./assets/chevron-white.svg" alt="e-telli-gent arrow logo"></div>
+          </a>
 
-    <label for="userMessage" class="sr-only">Type Your Message To Send</label>
-    <textarea name="message" placeholder="Message" cols="70" rows="10" required="true"></textarea>
-    <button type="submit" name="submit">Send Message</button>
-  </form>
+          <!-- HAMBURGER/MOBILE MENU -->
+          <label for="toggle"><img class='menu' src='./assets/hamburger.svg' aria-hidden="true"><span
+              class="sr-only">Menu</span></label>
+          <input type="checkbox" id="toggle" name="toggle" />
+          <ul>
+            <li><a class="nav-link light" href="index.html" title="Click here to go to the homepage">Home</a></li>
+            <li><a class="nav-link light" href="about.html" title="Click here to go to our about page">About</a></li>
+            <li><a class="nav-link light" href="contact.html" title="Click here to go to our contact page">Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="hero banner overlay">
+    <div class="hero-container">
+      <h1>About Us</h1>
+      <div class="divider"></div>
+      <p class="description center">At E-telli-gent we provide a focused, broad range of services to a
+        world-class, international,
+        region-centric clientelle with our signature e-solutions.</p>
+    </div>
+  </div>
 
+  <section class="team">
+    <div class="title-container">
+      <div class="title-container">
+        <div class="text-label">Game-Winning Team</div>
+        <h2>Meet the Team</h2>
+        <div class="divider"></div>
+        <p class="description center">Our team is made of the best people in the industry. Always here to help you every
+          step
+          of the way</p>
+      </div>
+      <div class="cards-container grid">
+        <div class="card">
+          <img class="team-photo" src="./assets/avatar-1.jpg" alt="Photo of Halima Benitez">
+          <h3>Halima Benitez</h3>
+          <div class="text-label">CEO</div>
+        </div>
+
+        <div class="card">
+          <img class="team-photo" src="./assets/avatar-2.jpg" alt="Photo of Darrell Rollins">
+          <h3>Darrell Rollins</h3>
+          <div class="text-label">Designer</div>
+        </div>
+
+        <div class="card">
+          <img class="team-photo" src="./assets/avatar-3.jpg" alt="Photo of Alison Cordova">
+          <h3>Alison Cordova</h3>
+          <div class="text-label">PR Manager</div>
+        </div>
+
+        <div class="card team">
+          <img class="team-photo" src="./assets/avatar-4.jpg" alt="Photo of Dave D'Souza">
+          <h3>Dave D'Souza</h3>
+          <div class="text-label">Developer</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mission-statement">
+    <div class="wrapper">
+      <div class="mission-statement-container">
+        <div class="sticky-info">
+          <h2>About Us</h2>
+          <div class="divider"></div>
+          <p class="description">E-telli-gent's mission is to ensure the best technological solutions for businesses
+            ready to leap into the next generation</p>
+        </div>
+        <div class="info">
+          <p class="description"></p>Today's software and systems must be able to compete in the international
+          marketplace. With over 240 products and accessories, E-telli-gent harnesses evolving,
+          dynamic
+          e-technologies that are developed by the best
+          people</p>
+          <div class="mission-photos">
+            <img src="./assets/about-1.jpg"
+              alt="Co-Workers placing their hands together in the center on top of a desk">
+            <img src="./assets/about-2.jpg" alt="Co-Workers shaking hands across a table">
+          </div>
+          <p class="description"></p>Our dynamic e-technologies help people businesses elevate to new heights with our
+          services to meet their
+          needs and exceed their goals in an ever-changing, world class, international business marketplace.</p>
+          <p class="description"></p>Our e-commerce solutions empower clients to use intuitive, adaptable, and
+          reliable e-services to create multi-tiered, distributed and didactic communication architectures. With over
+          15 subsidiaries, our global network enable us to maintain exceptional customer
+          service, enabling our people and partners to deliver expert technical and local support to our
+          customers all across the globe</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="slider">
+    <div class="slide-container">
+      <button class="slide-button left" id="slide-left"><i class="fas fa-chevron-left"></i></button>
+      <div id="slider">
+        <div class="slide slide1">
+          <div class="slide-content">
+            <span>Boardroom meeting at our headquarters in Alberta</span>
+          </div>
+        </div>
+        <div class="slide slide2">
+          <div class="slide-content">
+            <span>Project planning and invisioning</span>
+          </div>
+        </div>
+        <div class="slide slide3">
+          <div class="slide-content">
+            <span>Meeting with clients and stakeholders</span>
+          </div>
+        </div>
+      </div>
+      <button class="slide-button right" id="slide-right"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+  <section class="quote small">
+    <div class="title-container">
+      <div class="text-label">Experiences Worth Talking About</div>
+
+      <p class="quote center">"Maybe, just maybe, this may be the best website ever."</p>
+      <div class="divider"></div>
+
+      <p class="center"><span class="name">Haris Shaikh</span> — Co-Founder of Aadam Ethnic</p>
+    </div>
+  </section>
+  <section class="mission-statement">
+    <div class="wrapper">
+      <div class="mission-statement-container">
+        <div class="sticky-info">
+          <h2>Reviews</h2>
+          <div class="divider"></div>
+          <p class="description">We are very proud of the service we provide for our customers. In fact, we see a client
+            relationship drastically more
+            personal than that of most agencies in our field.</p>
+        </div>
+        <div class="review">
+          <div class="cards-container grid mini">
+            <div class="card">
+              <img class="review-photo" src="./assets/review-1.jpg" alt="Photo Of Kaeden Costa">
+              <h3>Kaeden Costa</h3>
+              <div class="text-label">CEO — Zen Mind</div>
+              <h4>Review</h4>
+              <p class="description italics center">"We were able to finally see the data we were looking for,
+                E-tell-gent helped us with analytics and their AI services automated our business to achieve new heights
+                we never thought of before"
+              </p>
+              <div class="review-star-container">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+              </div>
+            </div>
+
+            <div class="card up">
+              <img class="review-photo" src="./assets/review-2.jpg" alt="Photo Of Fraser Ramos">
+              <h3>Fraser Ramos</h3>
+              <div class="text-label">Music Producer — Studio51</div>
+              <h4>Review</h4>
+              <p class="description italics center">"E-telli-gent not only proved itself financially speaking, but the
+                response I have received from customers is
+                incredible and I have improved my business processes drastically."</p>
+              <div class="review-star-container">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+              </div>
+            </div>
+
+            <div class="card">
+              <img class="review-photo" src="./assets/review-3.jpg" alt="Photo Of Paul Baldwin">
+              <h3>Paul Baldwin</h3>
+              <div class="text-label">CTO — UBER</div>
+              <h4>Review</h4>
+              <p class="description italics center">"Professional, responsive, and able to keep up with ever-changing
+                demand and tight deadlines: That's how I would describe
+                the team at E-tell-gent"</p>
+              <div class="review-star-container">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+              </div>
+            </div>
+
+            <div class="card up">
+              <img class="review-photo" src="./assets/review-4.jpg" alt="Photo Of Stephen Allan">
+              <h3>Elise Swanson</h3>
+              <div class="text-label">President — Beau.ty</div>
+              <h4>Review</h4>
+              <p class="description italics center">“E-telligent has been an integral part of our e-commerce, we have
+                been able to compete with the biggest brands out there and it would not have been possible without them.
+                We have
+                tripled our business since 2019.”</p>
+              <div class="review-star-container">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+                <img class="stars" src="./assets/star.svg" alt="Review Star">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrapper">
+      <div class="footer-container">
+
+        <!--footer first content-->
+
+        <div class="textContainer">
+          <a class="logo" href="index.html" title="Logo">
+            <span class="e">e</span>
+            <div class="light">-telli-gent<img src="./assets/chevron-white.svg" alt="e-telli-gent arrow logo"></div>
+          </a>
+          <p>At E-telli-gent we provide a focused, broad range of services to a
+            world-class, international,
+            region-centric clientelle with our signature e-solutions.
+          </p>
+          <div class="social-icons-container">
+            <a href="https://twitter.com" class="social-icon-box twitter"><img src="./assets/twitter.svg"
+                alt="Click here to visit our Twitter page">
+            </a>
+            <a href="https://facebook.com" class="social-icon-box facebook"><img src="./assets/facebook.svg"
+                alt="Click here to visit our Facebook page">
+            </a>
+            <a href="https://instagram.com" class="social-icon-box instagram"><img src="./assets/instagram.svg"
+                alt="Click here to visit our Instagram page">
+            </a>
+            <a href="https://linkedin.com" class="social-icon-box linkedin"><img src="./assets/linkedin.svg"
+                alt="Click here to visit our LinkedIn page">
+            </a>
+          </div>
+        </div>
+
+        <!-- footer second content // Footer Navigation -->
+
+        <ul class="textContainer">
+          <h3>Navigation</h3>
+          <li><a class="nav-link light" href="index.html" title="Click here to go to the homepage">Home</a></li>
+          <li><a class="nav-link light" href="about.html" title="Click here to go to the about page">About</a></li>
+          <li><a class="nav-link light" href="contact.html" title="Click here to go to the contact page">Contact</a>
+          </li>
+        </ul>
+
+        <div class="textContainer">
+          <h3>Subscribe To Our Newsletter</h3>
+          <p>Get our monthly newsletter outlining our current projects and case studies.
+          </p>
+          <form action="#" method="POST" class="contact-form" name="contact-form">
+            <label for="userEmail" class="sr-only">Provide your Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="email address">
+            <button type="submit">Subscribe</button>
+        </div>
+
+        <ul class="textContainer">
+          <h3>Get In Touch</h3>
+          <li><a class="nav-link light" href="#" title="Click here to go to the homepage">2540 Kensington Road NW,
+              Calgary, AB
+              T2N 3S3</a></li>
+          <li><a class="nav-link light" href="#" title="Click here to go to the about page">info@etelligent.ca</a></li>
+          <li><a class="nav-link light" href="#" title="Click here to go to Travel's Twitter Page">+1 (403) 555-1234</a>
+          </li>
+        </ul>
+
+        <!-- footer third content -->
+
+
+
+      </div>
+  </footer>
+
+
+  <!-- copyright  -->
+
+  <div class="copyright">
+    <div class="wrapper">
+      <h4>Made with &#x2764 by Haris Shaikh</h4>
+    </div>
+  </div>
+
+
+  <script src='scripts.js'></script>
 </body>
 
 </html>
