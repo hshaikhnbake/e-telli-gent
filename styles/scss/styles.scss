@@ -1,3 +1,13 @@
-h1 {
-  background-color: black;
-} 
+@import 'normalize';
+@import 'global';
+@import 'navbar';
+@import 'hero';
+@import 'cards';
+@import 'feature';
+@import 'footer';
+@import 'missionstatement';
+@import 'form';
+@import 'small-section';
+@import 'slider';
+@import 'contact';
+@import 'map';

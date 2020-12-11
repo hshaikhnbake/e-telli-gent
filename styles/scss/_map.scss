@@ -1,0 +1,13 @@
+#map {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+
+}
+
+@media (max-width: 991px) {
+  #map {
+    height: 460px;
+    margin: 20px 0;
+  }
+}
