@@ -10,6 +10,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a5445796b5.js" crossorigin="anonymous"></script>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://e-telli-gent.com/">
+  <meta property="og:title" content="E-telli-gent Technological Solutions">
+  <meta property="og:description" content="At E-telli-gent we provide a focused, broad range of services to a
+          world-class, international,
+          region-centric clientelle with our signature e-solutions.">
+  <meta property="og:image" content="./assets/side-image1.jpeg"
+    alt="A picture showing team members collaborating on technological solutions by E-telli-gent">
+
+  <!-- Twitter Meta Tags -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://e-telli-gent.com/">
+  <meta property="twitter:title" content="E-telli-gent Technological Solutions">
+  <meta property="twitter:description" content="At E-telli-gent we provide a focused, broad range of services to a
+          world-class, international,
+          region-centric clientelle with our signature e-solutions.">
+  <meta property=" twitter:image" content="./assets/side-image1.jpeg"
+    alt="A picture showing team members collaborating on technological solutions">
+
+
 </head>
 
 <!--HEADER-->
@@ -46,7 +68,7 @@
       <div class="hero-text-split">
         <div class="text-label">Established 1997</div>
         <h1>A Global Leader in <span class="e">e</span>ffective Solutions</h1>
-        <p class="description">Harness the power of technology to optimize performance, gain insights on analytic and
+        <p class="description">Harness the power of technology to optimize performance, gain insights on analytics and
           reduce operational costs and downtime. At E-telli-gent we provide a focused, broad range of services to a
           world-class, international,
           region-centric clientelle with our signature e-solutions.</p>
@@ -54,17 +76,15 @@
         <div class="chevron">
           <img class="chevron-image" src="./assets/chevron-teal.svg" alt="Scroll Arrow Down">
         </div>
-        <button>See Features</button>
+        <button id="hero-button">See Features</button>
       </div>
       <div class="hero-image-split"></div>
-
     </div>
-
   </header>
 
   <!-- SECTION ONE: SERVICES -->
 
-  <section class="services">
+  <section class="services" id="services">
     <div class="wrapper">
       <div class="title-container">
         <div class="text-label">Technological Services</div>
@@ -122,13 +142,15 @@
     </div>
   </section>
 
+  <!-- SECTION TWO: FEATURE ONE -->
   <section class="feature">
     <div class="wrapper">
       <div class="feature-container">
 
         <div class="side-media flip">
           <div class="frame flip">
-            <img class="flip" src="./assets/side-image1.jpeg" alt="***HELLO INSERT ME****">
+            <img class="flip" src="./assets/side-image1.jpeg"
+              alt="A picture showing team members collaborating on technological solutions on a glass wall">
           </div>
         </div>
         <div class="side-content">
@@ -143,7 +165,7 @@
   </section>
 
 
-
+  <!-- SECTION THREE: BRANDS -->
   <section class="brands">
     <div class="wrapper">
       <div class="title-container">
@@ -162,6 +184,7 @@
     </div>
   </section>
 
+  <!-- SECTION FOUR: FEATURE TWO -->
   <section class="feature">
     <div class="wrapper">
       <div class="feature-container">
@@ -176,18 +199,15 @@
         </div>
         <div class="side-media">
           <div class="frame">
-            <img src="./assets/side-image2.jpeg" alt="***HELLO INSERT ME****">
+            <img src="./assets/side-image2.jpeg"
+              alt="A picture showing team members sharing on technological ideas on a tablet">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-
-
-
+  <!-- SECTION FIVE: RESULTS -->
 
   <section class="results">
     <div class="fact-info">
@@ -207,6 +227,7 @@
     </div>
   </section>
 
+  <!-- SECTION SIX: CONTACT US -->
   <section class="front-page-contact">
     <div class="wrapper">
       <div class="contact-container">
@@ -262,11 +283,12 @@
     </div>
   </section>
 
+  <!-- SECTION SEVEN: FOOTER -->
   <footer>
     <div class="wrapper">
       <div class="footer-container">
 
-        <!--footer first content-->
+        <!--Column One-->
 
         <div class="textContainer">
           <a class="logo" href="index.html" title="Logo">
@@ -293,7 +315,7 @@
           </div>
         </div>
 
-        <!-- footer second content // Footer Navigation -->
+        <!--Column Two -->
 
         <ul class="textContainer">
           <h3>Navigation</h3>
@@ -303,6 +325,7 @@
           </li>
         </ul>
 
+        <!--Column Three-->
         <div class="textContainer">
           <h3>Subscribe To Our Newsletter</h3>
           <p>Get our monthly newsletter outlining our current projects and case studies.
@@ -313,6 +336,7 @@
             <button type="submit">Subscribe</button>
         </div>
 
+        <!--Column Four-->
         <ul class="textContainer">
           <h3>Get In Touch</h3>
           <li><a class="nav-link light" href="#" title="Click here to go to the homepage">2540 Kensington Road NW,
@@ -324,14 +348,8 @@
               555-1234</a>
           </li>
         </ul>
-
-        <!-- footer third content -->
-
-
-
       </div>
   </footer>
-
 
   <!-- copyright  -->
 
@@ -341,7 +359,9 @@
     </div>
   </div>
 
-
+  <!--JavaScript Tags-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src='scripts.js'></script>
 
 </body>
 
