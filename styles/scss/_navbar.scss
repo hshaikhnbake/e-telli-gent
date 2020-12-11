@@ -49,6 +49,9 @@ nav #toggle {
 		height: 100%;
 		right: -100%;
     transition: all .5s ease-in; 
+    &.dark {
+      background-color: rgba(17, 17, 17, 0.9);
+    }
     a {
       width: 100%;
       display: inline-block;
