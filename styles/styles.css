@@ -578,6 +578,9 @@ nav #toggle {
     -webkit-transition: all .5s ease-in;
     transition: all .5s ease-in;
   }
+  nav ul.dark {
+    background-color: rgba(17, 17, 17, 0.9);
+  }
   nav ul a {
     width: 100%;
     display: inline-block;
