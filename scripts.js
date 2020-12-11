@@ -68,6 +68,9 @@ ready(function () {
 
     startSlide();
 
+    //click to scroll
+
+    document.getElementById('services').scrollIntoView
 
     //map
 
@@ -88,4 +91,12 @@ ready(function () {
   }
   // google.maps.event.addDomListener(window, 'load', initialize);
   
+});
+
+//jQuery - Scroll To Function to Services Section
+
+$("#hero-button").click(function () {
+  $([document.documentElement, document.body]).animate({
+    scrollTop: $("#services").offset().top
+  }, 2000);
 });
