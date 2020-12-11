@@ -1168,7 +1168,7 @@ footer button {
   color: #e4e4e4;
 }
 
-.copyright h4 {
+.copyright h5 {
   padding: 20px 0px;
   margin-bottom: 0;
   -webkit-transform: scale(1, 1);
@@ -1403,6 +1403,7 @@ textarea {
 
 .brands .brand-container img {
   width: 200px;
+  height: 100%;
   padding: 20px;
 }
 
