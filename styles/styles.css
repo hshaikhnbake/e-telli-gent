@@ -704,7 +704,7 @@ nav #toggle {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 480px;
+  min-height: 680px;
   height: auto;
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.6))), url(../assets/banner-1.jpg);
@@ -743,6 +743,9 @@ nav #toggle {
   }
   .chevron {
     display: none;
+  }
+  .banner {
+    min-height: 480px;
   }
 }
 

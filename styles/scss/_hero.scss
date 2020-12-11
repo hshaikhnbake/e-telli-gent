@@ -64,7 +64,7 @@
 .banner {
   justify-content: center;
   align-items: center;
-  min-height: 480px;
+  min-height: 680px;
   height: auto;
   background-size: cover;
   background-image: linear-gradient( rgba(17, 17, 17, 0.6)), url(../assets/banner-1.jpg);
@@ -94,6 +94,9 @@
   }
   .chevron {
     display: none;
+  }
+  .banner {
+    min-height: 480px;
   }
 }
 
