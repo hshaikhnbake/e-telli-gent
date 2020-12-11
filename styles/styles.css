@@ -716,6 +716,22 @@ nav #toggle {
   color: whitesmoke;
 }
 
+.banner-2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 680px;
+  height: auto;
+  background-size: cover;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.6))), url(../assets/banner-2.jpg);
+  background-image: linear-gradient(rgba(17, 17, 17, 0.6)), url(../assets/banner-2.jpg);
+  background-position: center;
+  color: whitesmoke;
+}
+
 .hero-container {
   display: -webkit-box;
   display: -ms-flexbox;
